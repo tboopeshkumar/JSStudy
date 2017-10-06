@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {Switch, Route} from 'react-router-dom'
-import { Login } from '../login/login'
+import { LoginForm } from '../login/LoginForm'
 
 export class Main extends Component{
     render(){
         return (
            <Switch>
-               <Route path='/login' component={Login}/>
+               {<Route path='/login' component={LoginForm}/>}
             </Switch>
         );
     }
