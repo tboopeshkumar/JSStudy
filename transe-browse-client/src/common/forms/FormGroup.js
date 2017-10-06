@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {PropTypes as PT } from "prop-types";
+import {PropTypes as PT} from "prop-types";
 import cx from 'classnames';
 
 const FormGroup = ({label, errorText, children})=>{
