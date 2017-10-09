@@ -32,7 +32,7 @@ class Button extends Component {
         return this.props.children;
     }
 
-    _disableState(){
+    _disabledState(){
         return this.props.disabled || this.props.busy || !!this.props.error;
     }
 
