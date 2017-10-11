@@ -44,7 +44,7 @@ class SignupForm extends Compoent{
 
         return(
             <form>
-                </form>
+            </form>
         )
     }
 
