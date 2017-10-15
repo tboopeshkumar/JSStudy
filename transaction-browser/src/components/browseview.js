@@ -13,9 +13,11 @@ export class BrowserView extends Component {
     constructor(props) {
         super(props);
         console.log(props);
-       // this.props.dispatch({ type : 'LOAD'})
-        
     }
+
+    componentDidMount() {
+        this.props.loadTransactions();
+   }
 
     onGridReady(params) {
         this.gridApi = params.api;

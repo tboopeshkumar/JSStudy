@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BrowseView from './components/browseview'
-import { createStore } from 'redux'
-import browseviewreducer from './reducers/browseviewreducer';
-import { browseView } from "./sagas/browseviewsaga";
+import store from './store/index';
 import { Provider } from 'react-redux';
 
-const store = createStore(browseviewreducer);
-browseView();
 class App extends Component {
   render() {
     return (
